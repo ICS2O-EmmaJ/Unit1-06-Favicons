@@ -15,7 +15,7 @@
 		
 		<!-- To use Google's MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-teal.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-purple.min.css" />
     <title>My Second Web Page, with a Favicon</title>
   </head>
   <body>
@@ -30,11 +30,13 @@
 	        <span class = "mdl-layout-title">My Second Web Page, with a Favicon</span>          
 	      </div>       
 	    </header>
+
+      <body style="background-color:rgb(201, 254, 255);">
 			
 			<!-- Container for web page content -->
 	    <main class = "mdl-layout__content" style = "padding-left:20px">
 				
-		    <h3>See another favicon in the browser tab above.</h3>
+		    <h4>Check out my second favicon in the browser tab above! It is a picture of my friend's dog, Piper.</h4>
 
 				<!-- My div tag with an id -->
 				<div id = "hello-world">This is an example of using &ltdiv&gt and how I escape the angle brackets in my code so I can write them to the screen:)</div>
@@ -42,6 +44,15 @@
 		    <p>
 		      Here is the link to my <a href="./index.html">first favicon</a> page.
 		    </p>
+
+        <!-- Simple MDL Progress Bar -->
+        <div id="p1" class="mdl-progress mdl-js-progress"></div>
+        <script>
+          document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(44);
+          });
+            
+        </script>
 			</main>
 		</div>
   </body>
